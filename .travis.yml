@@ -12,7 +12,6 @@ env:
   matrix:
     - TEST=unit
     - TEST=android ANDROID_TARGET=android-19 ANDROID_ABI=armeabi-v7a
-    - TEST=android ANDROID_TARGET=android-20 ANDROID_ABI=armeabi-v7a
     - TEST=android ANDROID_TARGET=android-21 ANDROID_ABI=armeabi-v7a
     - TEST=android ANDROID_TARGET=android-22 ANDROID_ABI=armeabi-v7a
     - TEST=android ANDROID_TARGET=android-23 ANDROID_ABI=armeabi-v7a
@@ -30,13 +29,15 @@ android:
     - tools
     - platform-tools
     - build-tools-25.0.2
+    - android-22
+    - android-23
+    - android-24
     - android-25
     - extra-android-support
     - extra-android-m2repository
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
     - sys-img-armeabi-v7a-android-19
-    - sys-img-armeabi-v7a-android-20
     - sys-img-armeabi-v7a-android-21
     - sys-img-armeabi-v7a-android-22
     - sys-img-armeabi-v7a-android-23
