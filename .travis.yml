@@ -56,7 +56,6 @@ licenses:
 
 before_install:
     - sudo apt-get update
-    - android update sdk --no-ui --all
 
 addons:
   apt_packages:
